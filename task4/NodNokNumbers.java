@@ -9,14 +9,14 @@ public class NodNokNumbers {
 	
 		sc = new Scanner(System.in);
 		
-		System.out.println("Введите первое число");
+		System.out.println("Enter the first number");
 		int x = sc.nextInt();
-		System.out.println("Введите второе число");
+		System.out.println("Enter the second number");
 		int y = sc.nextInt();
 		nod(x, y);
-		System.out.println("НОД "+nod(x, y));
+		System.out.println("NOD "+nod(x, y));
 		int nok = x * y / nod(x, y);
-		System.out.println("НОК "+nok);
+		System.out.println("NOK "+nok);
 	}
 	public static int nod(int a,int b) {
 		while (b !=0) {

@@ -8,7 +8,7 @@ public class Palindrome {
 	
 	public static void main(String[] args) {
 	
-		System.out.println("Введите слово для проверки на полиндромность");
+		System.out.println("Type a word to check for polydromy");
 		sc = new Scanner(System.in);
 		String wordForCheck = sc.next();
 		wordForCheck = wordForCheck.toUpperCase();
@@ -23,9 +23,9 @@ public class Palindrome {
         }
 
         if (isCheck) {
-            System.out.println("Полиндром");
+            System.out.println("Polynometh");
         } else {
-            System.out.println("Не полиндром");
+            System.out.println("Not a polandrom");
         }
 	}
 
