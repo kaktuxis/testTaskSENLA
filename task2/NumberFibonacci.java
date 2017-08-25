@@ -15,14 +15,14 @@ public class NumberFibonacci {
 			int n = sc.nextInt();
 			
 			if (n < 0) System.out.println("You have entered a number less than 0! Restart the application and try again!");
-			int x = 0;
-			int y = 1;
-			int f =x + y;
-			while (f <= n) {
-				System.out.print(f+ ", ");
-				x = y;
-				y = f;
-				f =x + y;
+			int prevNumber = 0;
+			int prevPrevNumber = 1;
+			int newNumber =prevNumber + prevPrevNumber;
+			while (newNumber <= n) {
+				System.out.print(newNumber+ ", ");
+				prevNumber = prevPrevNumber;
+				prevPrevNumber = newNumber;
+				newNumber =prevNumber + prevPrevNumber;
 			}
 		}
 		else {
